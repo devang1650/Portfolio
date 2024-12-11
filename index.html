@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Devang Vartak</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            padding: 5px 10px;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            background: linear-gradient(to right, #007bff, #6610f2);
+            color: #fff;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        header button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #fff;
+            color: #333;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .skill {
+            width: 100px;
+            text-align: center;
+            margin: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo"><a href="#">Devang Vartak</a></div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div>
+            <h1>Hi, I'm Devang Vartak</h1>
+            <p>AI Developer | Deep Learning Enthusiast</p>
+            <button onclick="location.href='#projects'">Explore My Work</button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate AI developer focused on building solutions like diabetic retinopathy detection and bone fracture analysis using deep learning.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Diabetic Retinopathy Detection</h3>
+                <p>A deep learning model achieving 89% accuracy using CNN.</p>
+            </div>
+            <div class="project">
+                <h3>Bone Fracture Detection</h3>
+                <p>Trained YOLOv5 for custom fracture localization.</p>
+            </div>
+            <div class="project">
+                <h3>MobileNetV2 Classifier</h3>
+                <p>Deployed a lightweight model for medical imaging classification.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <p>TensorFlow</p>
+            </div>
+            <div class="skill">
+                <p>Keras</p>
+            </div>
+            <div class="skill">
+                <p>YOLOv5</p>
+            </div>
+            <div class="skill">
+                <p>DenseNet</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: 221devang6003@sjcem.edu.in</p>
+        <p>GitHub: <a href="https://github.com/devang1650">github.com/devang1650</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Devang Vartak. All rights reserved.</p>
+    </footer>
+</body>
+</html>
